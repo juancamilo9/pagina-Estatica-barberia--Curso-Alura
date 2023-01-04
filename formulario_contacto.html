@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Formulario de contacto</title>
+</head>
+<body>
+    <header id="encabezado">
+        <div class="caja">
+            <h1 id="logo">
+                <img src="images/logo.png" alt="logo Alura">
+            </h1>
+            <nav id="menu">
+                <ul>
+                    <li>
+                        <a href="index.html">HOME</a>                    
+                    </li>
+                    <li>
+                        <a href="productos.html">PRODUCTOS</a>
+                    </li>
+                    <li>
+                        <a href="#">CONTACTO</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main  class="contenedor">
+        <div class="contenedor">
+            <form action="">
+                <fieldset>
+                    <!-- El for identifica la etiqueta input por su id. -->
+                    <label for="nombre">Nombre y Apellido</label>
+                    <input type="text" name="nombre" id="nombre" class="input-padron" required>
+                </fieldset>
+    
+                <fieldset>
+                    <label for="email">Correo electronico</label>
+                    <input type="email" id="email" name="email" class="input-padron" required placeholder="tucorreo@dominio.com">
+                </fieldset>
+    
+                <fieldset>
+                    <label for="telefono">Número teléfonico</label>
+                    <input type="tel" id="telefono" name="telefono" class="input-padron" required placeholder="(XX) XXXX XXXX">
+                </fieldset>
+    
+                <fieldset>
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="mensaje" id="mensaje" cols="68" rows="10" class="input-padron" required></textarea>
+                </fieldset>
+    
+                <fieldset class="div-contacto">
+                    <legend>¿Cómo le gustaría que lo contactemos?</legend>
+                    <label for="radio-email"><input type="radio" name="contacto" id="radio-email" value="email">Email</label>
+                    <label for="radio-telefono"><input type="radio" name="contacto" id="radio-tetfono" value="telefono">Teléfono</label>
+                    <label for="radio-whatsapp"><input type="radio" name="contacto" id="radio-whatsapp" value="whatsapp" checked>WhatsApp</label>
+                    <!-- Con la propiedad name de los radios, solo nos deja seleccionar uno, los debemos de llamar igual -->
+                </fieldset>
+    
+                <fieldset>
+                    <legend for="horario">¿En cúal horario prefiere ser atendido?</legend>
+                    <select name="" id="horario" class="input-padron">
+                        <option value="Mañana">Mañana</option>
+                        <option value="Tarde">Tarde</option>
+                        <option value="Noche">Noche</option>
+                        <option value="Cualquier">Cualquier horario</option>
+                    </select>
+                </fieldset>
+    
+                <fieldset class="div-checkbox">
+                    <label for=""><input type="checkbox" name="" id="" checked> Quiero recibir novedades de Barberia Alura</label>
+                </fieldset>
+    
+                <fieldset>
+                    <input type="submit" value="Enviar datos" class="enviar">
+                </fieldset>
+            </form>
+        </div>
+
+        <div class="tabla">
+            <table>
+                <!-- Encabezado de la tabla -->
+                <thead>
+                    <tr>
+                        <!-- columnas del thead -->
+                        <th>Día</th>
+                        <th>Horario</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Filas -->
+                    <tr>
+                        <!-- Columnas del tbody -->
+                        <td>Lunes</td>
+                        <td>08h - 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Miercoles</td>
+                        <td>08h - 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Viernes</td>
+                        <td>08h - 20h</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                </tfoot>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <img src="images/logo-blanco.png" alt="logopie de página">
+        <p class="copyright">&copy Copyrigth Barbería Alura 2022</p>
+    </footer>
+</body>
+</html>
